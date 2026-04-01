@@ -1,0 +1,23 @@
+# Height Traits
+
+## Male Height Traits (145-200 cm)
+- **Very Short**: 145-155 cm
+- **Short**: 156-165 cm
+- **Below Average**: 166-174 cm
+- **Average**: 175-182 cm
+- **Above Average**: 183-188 cm
+- **Tall**: 189-195 cm
+- **Very Tall**: 196-200 cm
+- **Extreme Tall**: 200 cm+
+- **Super Tall**: 205 cm+
+
+## Female Height Traits (135-190 cm)
+- **Very Short**: 135-145 cm
+- **Short**: 146-155 cm
+- **Below Average**: 156-163 cm
+- **Average**: 164-170 cm
+- **Above Average**: 171-177 cm
+- **Tall**: 178-185 cm
+- **Very Tall**: 186-190 cm
+- **Extreme Tall**: 190 cm+
+- **Super Tall**: 195 cm+
