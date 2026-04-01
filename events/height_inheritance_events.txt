@@ -1,0 +1,44 @@
+# Height Inheritance Events
+
+This file defines the height inheritance system for characters based on their sex and the height traits of their parents.
+
+## Inheritance Rules:
+
+1. **Traits Definition**:
+   - **Tall**: Height trait indicating above average height.
+   - **Average**: Height trait indicating average height.
+   - **Short**: Height trait indicating below average height.
+
+2. **Sex-Based Inheritance**:
+   - Sons can inherit the tall trait from either parent but are more likely to inherit it from their father.
+   - Daughters can inherit the tall trait from either parent and have equal chance of inheriting height from both.
+
+3. **Parent Height Traits Impact**:
+   
+   | Father Trait | Mother Trait | Son Outcome           | Daughter Outcome     |
+   |--------------|--------------|-----------------------|-----------------------|
+   | Tall         | Tall         | Tall                  | Tall                  |
+   | Tall         | Average      | Tall (70%), Average (30%)   | Tall (60%), Average (40%)  |
+   | Tall         | Short        | Tall (50%), Average (50%)    | Average (60%), Short (40%)   |
+   | Average      | Average      | Average                | Average                |
+   | Average      | Short        | Average (70%), Short (30%) | Average (40%), Short (60%)  |
+   | Short        | Short        | Short                 | Short                 |
+
+## Example Implementation in Game Logic:
+
+```python
+class Character:
+    def __init__(self, sex, father_height, mother_height):
+        self.sex = sex
+        self.father_height = father_height
+        self.mother_height = mother_height
+        self.height_trait = self.inherit_height_trait()
+
+    def inherit_height_trait(self):
+        # Inheritance logic based on sex and parent's height traits
+        # Implementation here
+        pass
+```
+
+## Conclusion
+This system allows for dynamic height trait assignment to characters based on their lineage, creating a richer character development experience.
